@@ -1,0 +1,139 @@
+body {
+  background-color: black;
+  color: floralwhite;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sidemenu {
+  position: fixed;
+  width: 320px;
+  left: 0;
+  height: 100vh;
+  z-index: 500;
+  padding: 20px;
+  border-right: 60px solid #fff;
+}
+
+.sidemenu ul {
+  padding: 0;
+}
+
+.sidemenu ul li {
+  list-style: none;
+}
+
+.sidemenu ul li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.sidemenu .icon {
+  position: absolute;
+  bottom: 0;
+}
+
+.sidemenu .icon a {
+  padding: 0 15px 0 0;
+  color: #fff !important;
+}
+
+.sidemenu i.open,
+.sidemenu .close {
+  color: #000 !important;
+  font-size: 37px !important;
+  position: absolute !important;
+  right: -45px !important;
+  top: 50% !important;
+  cursor: pointer;
+  transform: translateY(-50%) !important;
+}
+
+.sidemenu .close {
+  display: none;
+}
+
+img.logo {
+  position: absolute;
+  width: 50px;
+  right: -55px;
+  top: 26px;
+}
+
+.share-icon {
+  position: absolute;
+  right: -30px;
+  margin-right: -7px;
+  color: #000;
+  bottom: 30px;
+}
+
+.meals_name {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  top: 0;
+  color: #000;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-weight: bold;
+  font-size: 20px;
+  transform: translateY(100%);
+  transition: transform 0.4s;
+}
+
+.meals_name p {
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+  line-height: 25px;
+  padding: 15px 30px 0;
+}
+
+.meals:hover .meals_name {
+  transform: translateY(0);
+}
+
+.area a, .Ingredients a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.details span {
+  margin: 5px 8px 0 0;
+  padding: 10px 14px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px !important;
+  line-height: 1;
+  font-weight: 700;
+  color: #ccc;
+  border-radius: 3px;
+}
+
+.details span.recRecipy, .details span.tag {
+  background: #21282e;
+}
+
+.details span.source {
+  background: darkgreen;
+}
+
+.details span.Youtube {
+  background: brown;
+}
+
+.details span a {
+  color: #fff;
+  text-decoration: none;
+}
